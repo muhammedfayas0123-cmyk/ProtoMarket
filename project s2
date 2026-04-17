@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoMarket | Student Hardware Startups</title>
+    <meta name="description" content="Discover and buy hardware prototypes and projects created by university students.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="glass-nav">
+        <div class="logo">ProtoMarket<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#marketplace">Marketplace</a></li>
+            <li><a href="#upload" class="nav-cta">Upload Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Student Innovation</span>
+            <h1>Discover <span class="highlight">Hardware</span> Prototypes.</h1>
+            <p class="subtitle">Buy next-generation hardware projects directly from university students building the startups of tomorrow.</p>
+            <div class="hero-buttons">
+                <a href="#marketplace" class="btn btn-primary">Browse Projects</a>
+                <a href="#upload" class="btn btn-secondary">Sell Your Prototype</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </header>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="marketplace-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Prototypes</h2>
+                <p>Explore cutting-edge student hardware projects available for purchase.</p>
+            </div>
+            
+            <div class="grid gallery" id="projectGallery">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/drone.png" alt="Custom Racing Drone Prototype" class="card-img">
+                        <div class="price-tag">₹37,500</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vortex Racing Drone</h3>
+                        <p class="desc">High-speed modular drone frame with exposed carbon fiber and telemetry kit.</p>
+                        <div class="uploader-info">
+                            <div class="avatar">AK</div>
+                            <div class="details">
+                                <span class="name">Arjun Kumar</span>
+                                <span class="college">MIT · Massachusetts</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-full buy-btn">Buy Prototype</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/smart_glove.png" alt="Smart Haptic Glove" class="card-img">
+                        <div class="price-tag">₹24,999</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Haptic VR Smart Glove</h3>
+                        <p class="desc">A sensory feedback glove designed for immersive environments and robotics.</p>
+                        <div class="uploader-info">
+                            <div class="avatar">EL</div>
+                            <div class="details">
+                                <span class="name">Elena Lopez</span>
+                                <span class="college">Stanford · California</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-full buy-btn">Buy Prototype</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 (Kerala) -->
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/smart_helmet.png" alt="AR Smart Helmet" class="card-img">
+                        <div class="price-tag">₹9,999</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>AR Smart Helmet</h3>
+                        <p class="desc">Augmented Reality HUD for heavy machinery operators using an integrated projection module.</p>
+                        <div class="uploader-info">
+                            <div class="avatar">AS</div>
+                            <div class="details">
+                                <span class="name">Adarsh S</span>
+                                <span class="college">CET Trivandrum · Kerala</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-full buy-btn">Buy Prototype</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 (Kerala) -->
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/robotic_arm.png" alt="Desktop Robotic Arm" class="card-img">
+                        <div class="price-tag">₹7,000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>3D Printed Robotic Arm</h3>
+                        <p class="desc">Open-source 5-DOF desktop robotic arm prototype perfect for automation research.</p>
+                        <div class="uploader-info">
+                            <div class="avatar">MN</div>
+                            <div class="details">
+                                <span class="name">Mohammed N.</span>
+                                <span class="college">NITC Calicut · Kerala</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-full buy-btn">Buy Prototype</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 (Kerala) -->
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/eco_sensor.png" alt="Eco Sensor Node" class="card-img">
+                        <div class="price-tag">₹3,500</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Solar Eco Sensor</h3>
+                        <p class="desc">Self-powered environmental IoT sensor built on a tiny breadboard footprint.</p>
+                        <div class="uploader-info">
+                            <div class="avatar">RJ</div>
+                            <div class="details">
+                                <span class="name">Riya Joseph</span>
+                                <span class="college">Rajagiri School of Engg · Kerala</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-full buy-btn">Buy Prototype</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload-section">
+        <div class="container upload-container">
+            <div class="upload-text">
+                <h2>Launch Your <span class="highlight">Startup.</span></h2>
+                <p>Turn your university project into a real product. Upload your hardware prototype details, add a price, and start selling to builders and tech enthusiasts globally.</p>
+            </div>
+            <div class="upload-form-wrapper glass-panel">
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" id="projectName" placeholder="e.g. Smart IoT Plant Monitor" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="price">Price (₹)</label>
+                            <input type="number" id="price" placeholder="15000" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="studentName">Your Name</label>
+                            <input type="text" id="studentName" placeholder="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="college">College/University</label>
+                            <input type="text" id="college" placeholder="State University" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="New York" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Short Description</label>
+                        <textarea id="description" rows="3" placeholder="Describe your hardware and what it does..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Publish Prototype</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Checkout/Confirmation -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal glass-panel">
+            <h3 id="modalTitle">Action Successful</h3>
+            <p id="modalMessage">Your prototype has been added to the marketplace!</p>
+            <button class="btn btn-primary" id="closeModal">Awesome</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>ProtoMarket © 2026</p>
+            <p class="subtext">Empowering Student Hardware Founders.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Base & Variables */
+:root {
+    --bg-main: #0a0a0e;
+    --bg-secondary: #13141c;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a5b5;
+    --accent-primary: #6366f1; /* Indigo */
+    --accent-secondary: #8b5cf6; /* Violet */
+    --accent-glow: rgba(99, 102, 241, 0.4);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(19, 20, 28, 0.6);
+    
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, .logo, .badge, .price-tag {
+    font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Typography Utilities */
+.highlight {
+    background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+/* Navigation */
+.glass-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.logo .dot {
+    color: var(--accent-primary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: var(--accent-primary);
+}
+
+.nav-cta {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.nav-cta:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: var(--accent-primary);
+    color: #fff;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.btn-primary:hover {
+    background: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    background-image: url('assets/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay to darken background image */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(10,10,14,0.7) 0%, rgba(10,10,14,0.95) 100%);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.hero-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+/* Layout Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+}
+
+/* Marketplace Section */
+.marketplace-section {
+    padding: 6rem 5%;
+    position: relative;
+    background: var(--bg-main);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #1a1c23;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.price-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-weight: 800;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content .desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.uploader-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.uploader-info .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details .name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.details .college {
+    font-size: 0.75rem;
+    color: var(--accent-secondary);
+}
+
+/* Upload Section */
+.upload-section {
+    padding: 6rem 5%;
+    background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-secondary) 100%);
+    border-top: 1px solid var(--border-color);
+}
+
+.upload-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.upload-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.upload-text p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 5%;
+    text-align: center;
+    background: var(--bg-main);
+    border-top: 1px solid var(--border-color);
+}
+
+footer .subtext {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .upload-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .nav-links {
+        display: none; /* simple mobile handling */
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Form submission handling to mock dynamic marketplace entry
+    const uploadForm = document.getElementById('uploadForm');
+    const projectGallery = document.getElementById('projectGallery');
+
+    uploadForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Get values
+        const title = document.getElementById('projectName').value;
+        const price = document.getElementById('price').value;
+        const studentName = document.getElementById('studentName').value;
+        const college = document.getElementById('college').value;
+        const state = document.getElementById('state').value;
+        const desc = document.getElementById('description').value;
+
+        // Generate initials for avatar
+        const initials = studentName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+
+        // Create new project card element
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        
+        // Generate a random dark tech-like placeholder if we had no image, 
+        // using an unsplash source generic tech image as fallback mockup.
+        const fallbackImg = `https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400&h=300`;
+
+        card.innerHTML = `
+            <div class="card-img-wrapper">
+                <img src="${fallbackImg}" alt="New Prototype" class="card-img">
+                <div class="price-tag">₹${price}</div>
+            </div>
+            <div class="card-content">
+                <h3>${title}</h3>
+                <p class="desc">${desc}</p>
+                <div class="uploader-info">
+                    <div class="avatar">${initials}</div>
+                    <div class="details">
+                        <span class="name">${studentName}</span>
+                        <span class="college">${college} · ${state}</span>
+                    </div>
+                </div>
+                <button class="btn btn-full buy-btn">Buy Prototype</button>
+            </div>
+        `;
+
+        // Prepend new card to the gallery
+        projectGallery.insertBefore(card, projectGallery.firstChild);
+
+        // Bind buy event to new button
+        const newBuyBtn = card.querySelector('.buy-btn');
+        newBuyBtn.addEventListener('click', () => {
+            showModal('Checkout Prototype', `You are about to start checkout for ${title}. (Mock Checkout)`);
+        });
+
+        // Reset form and show success message
+        uploadForm.reset();
+        showModal('Startup Launched!', 'Your hardware prototype is now live on the marketplace.');
+    });
+
+    // Bind original buy buttons
+    document.querySelectorAll('.buy-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const title = e.target.closest('.card-content').querySelector('h3').innerText;
+            showModal('Checkout Prototype', `You are about to start checkout for ${title}. (Mock Checkout)`);
+        });
+    });
+
+    // Modal logic
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModalBtn = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalMessage = document.getElementById('modalMessage');
+
+    function showModal(title, message) {
+        modalTitle.innerText = title;
+        modalMessage.innerText = message;
+        modalOverlay.classList.add('active');
+    }
+
+    closeModalBtn.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+    });
+
+    // Close on background click
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            modalOverlay.classList.remove('active');
+        }
+    });
+
+});
